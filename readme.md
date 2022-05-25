@@ -85,19 +85,19 @@ Beacuse we don't has user in db, so i just develop this function to save the use
 
 The diagram of my function as below.
 
-![image-20220524143703808](/Users/justalong/Library/Application Support/typora-user-images/image-20220524143703808.png)
+![image-20220524143703808](https://tva1.sinaimg.cn/large/e6c9d24egy1h2l1hrzv2zj20nz06m752.jpg)
 
 #### 6.2 About the kafka to get the transaction
 
 This function i just use kafka to get transations and save the transactions to db.(I didn't use security here.The diagram of my function as below.
 
-![image-20220524223929579](/Users/justalong/Library/Application Support/typora-user-images/image-20220524223929579.png)
+![image-20220524223929579](https://tva1.sinaimg.cn/large/e6c9d24egy1h2l1hx0orwj20q6070q3r.jpg)
 
 #### 6.3 About the user query by month.
 
 The request will be checked by the spring security to query. And the request should include the password and username.It can make sure the security by let the user to input password to query.(The user must input password every time.Maybe i can save the token to the database, and find the JWT, but i think is not a good way, so i still want to find the best way.)
 
-![image-20220524154227729](/Users/justalong/Library/Application Support/typora-user-images/image-20220524154227729.png)
+![image-20220524154227729](https://tva1.sinaimg.cn/large/e6c9d24egy1h2l1i09s1vj21410cen01.jpg)
 
 #### 6.4 Kubemetes(I'm learning.Havn't done.)
 
@@ -113,7 +113,7 @@ The sit of swagger: http://localhost:9000/swagger-ui/index.html#/.
 
 And then search :" /bank-openapi"as below
 
-![image-20220524180347573](/Users/justalong/Library/Application Support/typora-user-images/image-20220524180347573.png)"
+![image-20220524180347573](https://tva1.sinaimg.cn/large/e6c9d24egy1h2l1i3fhntj20w00gtzm2.jpg)"
 
 #### Case 1
 
@@ -133,7 +133,7 @@ And then search :" /bank-openapi"as below
 
 1-3 Result:
 
-![image-20220524174712826](/Users/justalong/Library/Application Support/typora-user-images/image-20220524174712826.png)
+![image-20220524174712826](https://tva1.sinaimg.cn/large/e6c9d24egy1h2l1i6cxwgj214a0dx0u5.jpg)
 
 #### Case 2
 
@@ -161,7 +161,7 @@ And then search :" /bank-openapi"as below
 
 2-3 result:
 
-![image-20220524232340421](/Users/justalong/Library/Application Support/typora-user-images/image-20220524232340421.png)
+![image-20220524232340421](https://tva1.sinaimg.cn/large/e6c9d24egy1h2l1i9ix92j21240h9gnj.jpg)
 
 #### Case 3
 
@@ -185,7 +185,7 @@ And then search :" /bank-openapi"as below
 
 3-3 Result:
 
-![image-20220524232512612](/Users/justalong/Library/Application Support/typora-user-images/image-20220524232512612.png)
+![image-20220524232512612](https://tva1.sinaimg.cn/large/e6c9d24egy1h2l1ict5u6j212f0kmmyz.jpg)
 
 3-4 Special description
 
@@ -201,11 +201,11 @@ In order to satisfy this need, i deal the total in the service layer, return as 
 
 I set the value of account as "total", and set the value of total debit to  "totalDebit", and also set the value of total credit to  "totalCredit".
 
-![image-20220524233233259](/Users/justalong/Library/Application Support/typora-user-images/image-20220524233233259.png)
+![image-20220524233233259](https://tva1.sinaimg.cn/large/e6c9d24egy1h2l1ighyftj20c3078aag.jpg)
 
 #### 7.2 Unit Test
 
-![image-20220524223822483](/Users/justalong/Library/Application Support/typora-user-images/image-20220524223822483.png)
+![image-20220524223822483](https://tva1.sinaimg.cn/large/e6c9d24egy1h2l1ijhosfj20di03z3yl.jpg)
 
 
 
